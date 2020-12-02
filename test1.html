@@ -1,0 +1,23 @@
+<div id="seadragon-viewer" style="width:800px; height:600px;"></div>
+<script src=" /Users/apple/Documents/Courses/JavaScript/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+var duomo = {
+  Image: {
+    xmlns: "http://schemas.microsoft.com/deepzoom/2008",
+    Url: "//openseadragon.github.io/example-images/duomo/duomo_files/",
+    Format: "jpg",
+    Overlap: "2",
+    TileSize: "256",
+    Size: {
+      Width:  "13920",
+      Height: "10200"
+    }
+  }
+};
+
+var viewer = OpenSeadragon({
+  id: "seadragon-viewer",
+  prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+  tileSources: duomo
+});
+</script>
